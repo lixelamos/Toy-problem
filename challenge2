@@ -1,0 +1,16 @@
+function calculateDemeritPoints(speed) {
+    if (speed <= 70) {
+      console.log("Ok");
+      return 0;
+    } else {
+      let points = Math.floor((speed - 70) / 5);
+      if (points > 12) {
+        console.log("License suspended");
+        return 12;
+      } else {
+        console.log("Points:", points);
+        return points;
+      }
+    }
+  }
+  
